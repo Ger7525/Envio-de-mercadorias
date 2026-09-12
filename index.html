@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Acesso - Sistema Operacional do Edifício Laguna Hall</title>
+</head>
+<body>
+
+    <div class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h1>Sistema Operacional</h1>
+                <h1>Condomínio Laguna Hall</h1>
+                <p>Acesso e Identificação de Operador</p>
+            </div>
+
+            <form onsubmit="iniciarSessao(event)">
+                <div class="form-group">
+                    <label for="selectUsuarioLogin">Selecione o Colaborador:</label>
+                    <select id="selectUsuarioLogin" required>
+                        <option value="">-- Selecione seu Nome --</option>
+                        <option value="Germano Santos">Germano Santos (Porteiro)</option>
+                        <option value="Jonas Paulo">Jonas Paulo (Porteiro)</option>
+                        <option value="Alexandre Florêncio">Alexandre Florêncio (Porteiro)</option>
+                        <option value="Luiz Carlos">Luiz Carlos (Porteiro)</option>
+                        <option value="Cícero">Cícero (Zelador)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" style="margin-top: 20px;">🔓 Entrar no Sistema</button>
+            </form>
+            <figure class="logo-gs">
+                <img src="imagem/logo-login-p.png" alt="">
+            </figure>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
